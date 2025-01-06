@@ -1,8 +1,92 @@
-# Sudoko-Solver-Using-DLX
+# Sudoku Solver Using DLX
 
-## Overview
+This project is an implementation of Donald Knuth's Algorithm X using the Dancing Links (DLX) technique to solve Sudoku puzzles efficiently.
 
-The Suoko Solver is an efficient algorithm designed to solve Sudoku puzzles using Donald Knuth's Algorithm X with the Dancing Links (DLX) data structure. Algorithm X is a backtracking algorithm that efficiently finds all exact covers in a matrix representation of the problem.The DLX technique optimizes this process by dynamically managing the matrix, enabling rapid additions and removals of constraints during the search.
+## Table of Contents
 
-## Files
-- SudokoSolver.cpp: The main script that performs the Sudoku-solving process using the DLX algorithm with a linked list implementation
+- [Introduction](#introduction)
+- [Algorithm Overview](#algorithm-overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [References](#references)
+- [License](#license)
+
+## Introduction
+
+Sudoku is a popular number-placement puzzle that requires filling a 9x9 grid so that each row, column, and 3x3 subgrid contains all digits from 1 to 9 without repetition. This project utilizes Algorithm X with Dancing Links to solve Sudoku puzzles by transforming them into an exact cover problem.
+
+## Algorithm Overview
+
+Algorithm X is a recursive, nondeterministic, depth-first, backtracking algorithm devised by Donald Knuth to solve exact cover problems. The Dancing Links technique is an efficient implementation of Algorithm X using a circular doubly linked list to represent the matrix, allowing for quick removal and restoration of rows and columns during the search process.
+
+In the context of Sudoku, the constraints are:
+
+1. Each row must contain digits 1-9 without repetition.
+2. Each column must contain digits 1-9 without repetition.
+3. Each 3x3 subgrid must contain digits 1-9 without repetition.
+4. Each cell must contain exactly one digit.
+
+These constraints are mapped to an exact cover problem, which is then solved using the DLX algorithm.
+
+## Features
+
+- Efficiently solves standard 9x9 Sudoku puzzles.
+- Can be extended to solve larger Sudoku variants.
+- Command-line interface for input and output.
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/ayushmohta7/Sudoko-Solver-Using-DLX.git
+   cd Sudoko-Solver-Using-DLX
+   ```
+
+2. **Compile the program:**
+
+   Ensure you have a C++ compiler installed. Then, compile the source code:
+
+   ```bash
+   g++ -o sudoku_solver main.cpp
+   ```
+
+## Usage
+
+1. **Prepare your Sudoku puzzle:**
+
+   Create a text file (e.g., `puzzle.txt`) containing the Sudoku puzzle. Use zeros (`0`) to represent empty cells. For example:
+
+   ```
+   530070000
+   600195000
+   098000060
+   800060003
+   400803001
+   700020006
+   060000280
+   000419005
+   000080079
+   ```
+
+2. **Run the solver:**
+
+   ```bash
+   ./sudoku_solver puzzle.txt
+   ```
+
+   The solved puzzle will be displayed in the console.
+
+## References
+
+- Donald Knuth's paper on Dancing Links: [http://www.ocf.berkeley.edu/~jchu/publicportal/sudoku/0011047.pdf](http://www.ocf.berkeley.edu/~jchu/publicportal/sudoku/0011047.pdf)
+- Jonathan Chu's explanation on converting Sudoku to an exact cover problem: [https://www.ocf.berkeley.edu/~jchu/publicportal/sudoku/sudoku.paper.html](https://www.ocf.berkeley.edu/~jchu/publicportal/sudoku/sudoku.paper.html)
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+*Note: This README provides a general overview and usage instructions. For detailed implementation and code structure, please refer to the source code files in the repository.*
