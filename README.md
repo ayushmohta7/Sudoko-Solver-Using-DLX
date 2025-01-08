@@ -31,8 +31,7 @@ These constraints are mapped to an exact cover problem, which is then solved usi
 
 ## Features
 
-- Efficiently solves standard 9x9 Sudoku puzzles.
-- Can be extended to solve larger Sudoku variants.
+- Can be used to solve N-Queen,Kakuro and Nonogram.
 - Command-line interface for input and output.
 
 ## Installation
