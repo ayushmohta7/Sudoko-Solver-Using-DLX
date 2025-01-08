@@ -14,7 +14,7 @@ This project is an implementation of Donald Knuth's Algorithm X using the Dancin
 
 ## Introduction
 
-Sudoku is a popular number-placement puzzle that requires filling a 9x9 grid so that each row, column, and 3x3 subgrid contains all digits from 1 to 9 without repetition. This project utilizes Algorithm X with Dancing Links to solve Sudoku puzzles by transforming them into an exact cover problem.
+In this project, we tackle the challenge of solving Sudoku puzzles using Algorithm X combined with Dancing Links. This clever approach transforms the puzzle into an "exact cover" problem, allowing us to efficiently find solutions.
 
 ## Algorithm Overview
 
