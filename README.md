@@ -31,7 +31,7 @@ These constraints are mapped to an exact cover problem, which is then solved usi
 
 ## Features
 
-- Can be used to solve N-Queen,Kakuro and Nonogram.
+- Can be extended to solve N-Queen, Kakuro and Nonogram puzzles.
 - Command-line interface for input and output.
 
 ## Installation
