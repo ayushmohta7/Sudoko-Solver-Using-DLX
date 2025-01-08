@@ -78,7 +78,7 @@ These constraints are mapped to an exact cover problem, which is then solved usi
    The solved puzzle will be displayed in the console.
 
 ## References
-
+- Wikipedia page on exact cover problem: [https://en.wikipedia.org/wiki/Exact_cover](https://en.wikipedia.org/wiki/Exact_cover)
 - Donald Knuth's paper on Dancing Links: [http://www.ocf.berkeley.edu/~jchu/publicportal/sudoku/0011047.pdf](http://www.ocf.berkeley.edu/~jchu/publicportal/sudoku/0011047.pdf)
 - Jonathan Chu's explanation on converting Sudoku to an exact cover problem: [https://www.ocf.berkeley.edu/~jchu/publicportal/sudoku/sudoku.paper.html](https://www.ocf.berkeley.edu/~jchu/publicportal/sudoku/sudoku.paper.html)
 
